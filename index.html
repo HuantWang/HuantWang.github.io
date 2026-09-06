@@ -1,0 +1,919 @@
+
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.42" />
+  <meta name="author" content="Huanting Wang">
+
+  
+  
+  
+  
+  <meta name="description" content="Huanting Wang. Research on machine learning for program analysis, code optimization, and software security.">
+
+  
+  <link rel="alternate" hreflang="en-gb" href="https://huantwang.github.io/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/markdown.css">
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://huantwang.github.io/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Huanting Wang">
+  <meta property="og:url" content="https://huantwang.github.io/">
+  <meta property="og:title" content="Huanting Wang">
+  <meta property="og:description" content="Huanting Wang — ML for program analysis, code optimization, and software security.">
+  <meta property="og:locale" content="en-gb">
+  
+  <meta property="og:updated_time" content="2026-06-29T00:00:00&#43;01:00">
+  
+
+  
+
+  
+
+  <title>Huanting Wang</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Huanting Wang</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+
+
+        <li class="nav-item">
+          <a href="/#about" data-target="#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/#phd" data-target="#phd">
+
+            <span>PhD Opportunities</span>
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/#news" data-target="#news">
+
+            <span>News</span>
+
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a href="/#publications" data-target="#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/#awards" data-target="#awards">
+
+            <span>Awards</span>
+
+          </a>
+        </li>
+
+<!--        <li class="nav-item">-->
+<!--          <a href="/#services" data-target="#services">-->
+<!--            -->
+<!--            <span>Services</span>-->
+<!--            -->
+<!--          </a>-->
+<!--        </li>-->
+
+
+        <li class="nav-item">
+          <a href="/#projects" data-target="#projects">
+
+            <span>Projects</span>
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/#teaching" data-target="#teaching">
+
+            <span>Services</span>
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/#bio" data-target="#bio">
+
+            <span>Biography</span>
+
+          </a>
+        </li>
+
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<span id="homepage" style="display: none"></span>
+
+
+  
+  
+  <section id="about" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
+  <div class="col-xs-12 col-md-4">
+    <div id="profile">
+
+      
+      <div class="portrait" style="background-image: url('/img/portrait.jpg');"></div>
+      <meta itemprop="image" content="https://huantwang.github.io/img/portrait.jpg">
+      
+
+      <div class="portrait-title">
+        <h2 itemprop="name">Huanting Wang</h2>
+<!--        <h3 itemprop="jobTitle">Lecturer (Assistant Professor)</h3>-->
+<!--        <h3 itemprop="jobTitle">Computer Science Ph.D. Candidate</h3>-->
+
+        
+        
+
+        
+<!--        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">-->
+<!--          <a href="https://www.leeds.ac.uk/" target="_blank" itemprop="url" rel="noopener">-->
+<!--          <span itemprop="name">University of Leeds</span>-->
+<!--          </a>-->
+<!--        </h3>-->
+        
+      </div>
+
+      <link itemprop="url" href="https://huantwang.github.io/">
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        <li>
+          <a itemprop="sameAs" href="mailto:scshwan@leeds.ac.uk" target="_blank" rel="noopener">
+            <i class="fa fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=inrTk6cAAAAJ&hl=en" target="_blank" rel="noopener">
+            <i class="ai ai-google-scholar big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a itemprop="sameAs" href="https://dblp.uni-trier.de/pid/254/9980.html" target="_blank" rel="noopener">
+            <i class="ai ai-dblp big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a itemprop="sameAs" href="https://github.com/HuantWang" target="_blank" rel="noopener">
+            <i class="fa fa-github big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-8" itemprop="description">
+
+    
+<h4 >王焕廷 </h4>
+<h4 >Huanting Wang</h4>
+
+
+<p>I received my Ph.D. in Computer Science from the <a href="https://eps.leeds.ac.uk/computing" target="_blank">School of Computer Science</a>
+  at the <a href="http://www.leeds.ac.uk/" target="_blank">University of Leeds</a>, where I was fortunate to be advised by
+  <a href="https://eps.leeds.ac.uk/computing/staff/17094/professor-zheng-zane-wang">Professor Zheng Wang</a>
+  at the <a href="https://issl-uk.com/" target="_blank">Intelligent Systems Software Lab</a>.</p>
+
+
+<p>My research focuses on practical machine learning, program analysis, software security, and optimization,
+  aiming to make intelligent software engineering tools more accessible, reliable, and deployable.
+</p>
+
+<p>My <strong>research interests</strong> include:</p>
+
+<ul>
+<li><strong>Applied Machine Learning:</strong> Developing precise, automated, and robust ML/LLM-based techniques
+  for program understanding, software engineering tasks, and deployment-time reliability.
+ </li>
+<li><strong>Software Security:</strong> Applying ML, including LLMs, program analysis, and system-level techniques
+  to detect bugs and vulnerabilities. My recent work has uncovered over 100 bugs and more than 50 CVEs in real-world projects.
+  I am also exploring CHERI-based memory safety and security analysis.
+ </li>
+<li><strong>Code Optimization:</strong> Leveraging ML, reinforcement learning, and statistical evaluation to optimize programs
+  and systems, with a focus on runtime efficiency and deployment issues in distributed systems and services.
+ </li>
+
+</ul>
+
+<h4 id="phd">PhD Opportunities</h4>
+
+<p>Our group is looking for self-motivated PhD students, and scholarships may be available for
+  outstanding candidates.
+  Have a look at my research interests and recent publications &mdash; if any of those grab you,
+  send me an <a href="mailto:scshwan@leeds.ac.uk">email</a> with a CV and a short text describing
+  your background. I am also open-minded: if you have a great idea you would like to pursue, get
+  in touch!</p>
+
+<p>Applicants should meet the School's
+  <a href="https://eps.leeds.ac.uk/computing-research-degrees/doc/entry-requirements" target="_blank" rel="noopener">entry
+  requirements</a>. Funding routes &mdash; see <a href="./phd.html#funding">the full list</a>.
+  Before applying, please read <a href="./phd.html">this page</a>.</p>
+
+
+<!--<div class="alert alert-note">-->
+<!--  <p> I am currently and I am happy to review papers related to my research area. Please feel free to email me about any opportunity.  </p>-->
+<!--</div>-->
+
+    <div class="row">
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <section id="news" class="home-section">
+    <div class="container">
+
+
+<div class="row">
+
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>News</h1>
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <ul id="news-list">
+<li>[Aug, 2026] I will attend the <a href="https://vetss.org.uk/summer-school/">VeTSS</a>. See you in Exeter!</li>
+<li>[June, 2026] CapOpt has been accepted to <a href="https://2026.splashcon.org/track/oopsla-2026">OOPSLA 26</a> after a minor revision!</li>
+<li>[June, 2026] Selected for the <a href="https://iuk-business-connect.org.uk/opportunities/icure-discover/">ICURe Discover Programme</a> by Innovate UK!</li>
+<li>[May, 2026] <a href="https://dl.acm.org/doi/abs/10.1145/3814942.3816133">One paper</a> on CHERI security has been accepted to <a href="https://conf.researchr.org/home/ismm-2026">ISMM 26</a>!</li>
+<li>[Apr, 2026] Selected for the <a href="https://mentornetwork.uk/">Northern Mentor Programme</a>, paired with <a href="https://thecurve.io/about/paul-ridgway/">Paul Ridgway</a>.</li>
+<li>[Mar, 2026] I will attend the <a href="https://cheri-alliance.org/events/cheri-blossoms-conference-2026/">CHERI Blossoms 2026</a> and give a talk at <a href="https://www.microsoft.com/en-gb/about/offices/cambridge/"> Microsoft</a> about LLM-based security. See you in Cambridge!</li>
+<li>[Jan, 2026] I will attend the <a href="https://www.hipeac.net/2026/krakow/#/">HiPEAC 2026</a>. See you in Poland!</li>
+<li>[July, 2025] I will attend the <a href="https://vetss.org.uk/summer-school/">VeTSS</a>. See you in Glasgow!</li>
+<li>[June, 2025] Received the Chinese Award for Outstanding Students Abroad!</li>
+<li>[May, 2025] <a href="https://dl.acm.org/doi/10.1145/3735950.3735954">SecureMind</a> has been accepted to <a href="https://conf.researchr.org/home/ismm-2025">ISMM 25</a>. See you in Seoul!</li>
+<li>[Jan, 2025] <a href="https://dl.acm.org/doi/10.1145/3696443.3708959">PROM</a> received the Distinguished Paper Award at <a href="https://2025.cgo.org/">CGO 25</a>!</li>
+<li>[Jan, 2025] <a href="https://ieeexplore.ieee.org/abstract/document/10820106">Scenario</a> has been accepted to <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC</a>!</li>
+<li>[Nov, 2024] <a href="https://arxiv.org/abs/2501.00298">PROM</a> has been accepted to <a href="https://2025.cgo.org/">CGO 25</a>! See you in Las Vegas!</li>
+<li>[Oct, 2024] Received <a href="https://aisuperconnector.com/">AI SuperConnector Award</a> for AI4Secure!</li>
+<li>[Aug, 2024] I will attend the <a href="https://wp.doc.ic.ac.uk/vss24/">VeTSS</a>. See you in Bristol!</li>
+<li>[June, 2024] I will give a talk at the <a href="https://www.eventbrite.co.uk/e/workshop-on-data-science-infrastructures-tickets-921456801097?aff=oddtdtcreator&_gl=1%2A1x6nn8q%2A_up%2AMQ..%2A_ga%2ANDQ1OTcwNjQxLjE3MTc3NTgwOTE.%2A_ga_TQVES5V6SH%2AMTcxNzc1ODA5MS4xLjAuMTcxNzc1ODA5MS4wLjAuMA..">
+  LIDA Workshop</a>. See you in Leeds!</li>
+<li>[May, 2024] I will attend the <a href="https://www.hipeac.net/acaces/2024/#/">HiPEAC ACACES 2024</a> this summer. See you in Italy!</li>
+<li>[Mar, 2024] <a href="https://dl.acm.org/doi/10.1145/3650212.3652120">UPBEAT </a>
+  has been accepted to <a href="https://conf.researchr.org/home/issta-2024">ISSTA 24</a>!</li>
+<li>[Jan, 2024] I will present a poster in the <a href="https://conf.researchr.org/track/cgo-2024/cgo-2024-student-research-competition"> CGO 24 SRC</a>. See you in Edinburgh!</li>
+<li>[Dec, 2023] <a href="https://dl.acm.org/doi/10.1145/3597503.3639212">Concoction</a>
+  has been accepted to <a href="https://conf.researchr.org/home/icse-2024">ICSE 24</a>! See you in Lisbon!</li>
+<li>[Dec, 2023] Received <a href="https://www.mitacs.ca/our-programs/globalink-research-award-students-postdocs/"> Mitacs Globalink Research Award</a>!</li>
+</ul>
+<p class="view-all" id="news-toggle-wrap" style="display:none; text-align:center">
+  <a href="#news" id="news-toggle">Show more <i class="fa fa-angle-double-down"></i></a>
+</p>
+<script>
+(function () {
+  var list = document.getElementById('news-list');
+  if (!list) return;
+  var items = list.children, limit = 10;
+  if (items.length <= limit) return;
+  var wrap = document.getElementById('news-toggle-wrap');
+  var toggle = document.getElementById('news-toggle');
+  var expanded = false;
+  function render() {
+    for (var i = limit; i < items.length; i++) {
+      items[i].style.display = expanded ? '' : 'none';
+    }
+    toggle.innerHTML = expanded
+      ? 'Show less <i class="fa fa-angle-double-up"></i>'
+      : 'Show more <i class="fa fa-angle-double-down"></i>';
+  }
+  wrap.style.display = '';
+  render();
+  toggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    expanded = !expanded;
+    render();
+  });
+})();
+</script>
+
+  </div>
+
+</div>
+
+    </div>
+  </section>
+  
+<!--  <section id="research" class="home-section">-->
+<!--    <div class="container">-->
+<!--  </section>-->
+  
+  <section id="publications" class="home-section">
+    <div class="container">
+<!--  </section>-->
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Selected Publications</h1>
+    
+    
+    <p class="view-all">
+      <a href="https://scholar.google.co.uk/citations?user=inrTk6cAAAAJ&hl=en">
+        More Publications
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <p><a href="https://scholar.google.co.uk/citations?user=inrTk6cAAAAJ&hl=en" target="_blank">Google Scholar</a> | <a href="https://dblp.uni-trier.de/pid/254/9980.html" target="_blank">DBLP</a></p>
+
+
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+
+            [<b>CGO &#39;25</b>]
+
+  <i><a href="https://2025.cgo.org/">Enhancing Deployment-time Predictive Model Robustness for Code Analysis and Optimization</a> </i><br/>
+  <span itemprop="author">
+    <strong>Huanting Wang</strong>, Patrick Lenihan, Zheng Wang</span><br/>
+  <i>
+
+	   <a href="https://2025.cgo.org/"  target="_blank" itemprop="url" rel="noopener" style="color:#44b389">
+
+  The International Symposium on Code Generation and Optimization (CGO 2025) (<del>Artifact Evaluated!</del>)
+  </a></i>, 2025.
+            <div class="pub-meta">
+
+  Premier ACM Conference in Compiler Optimization (CORE A)
+
+<div>
+
+<span style="display: inline-block;">
+  <img src="../img/topcited.png" width="30" height="30" style="vertical-align: middle;" alt="Top cited award">
+</span> <strong>Distinguished Paper Award</strong>
+
+          <a class="btn btn-primary btn-outline btn-xs" href="https://eprints.whiterose.ac.uk/id/eprint/221073/15/Enhancing%20Deployment-Time%20Predictive%20Model.pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/HuantWang/PROM" target="_blank" rel="noopener">
+  Code and dataset
+</a>
+
+<div class="row">
+<div class="column">
+<img src="../img/artifacts_available.jpg" width="30" height="30" alt="ACM Artifacts Available badge">
+</div>
+<div class="column">
+<img src="../img/results_reproduced.jpg" width="30" height="30" alt="ACM Results Reproduced badge">
+</div>
+<img src="../img/artifacts_evaluated_reusable.jpg" width="30" height="30" alt="ACM Artifacts Evaluated - Reusable badge">
+</div>
+</div>
+</div>
+
+</div>
+
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+
+            [<b>ISMM &#39;25</b>]
+
+  <i><a href="https://conf.researchr.org/home/ismm-2025">SecureMind: A Framework for Benchmarking Large Language Models in Memory Bug Detection and Repair</a> </i><br/>
+  <span itemprop="author">
+    <strong>Huanting Wang</strong>, Dejice Jacob, David R Kelly, Yehia Elkhatib, Jeremy Singer, Zheng Wang</span><br/>
+  <i>
+
+	   <a href="https://conf.researchr.org/home/ismm-2025"  target="_blank" itemprop="url" rel="noopener" style="color:#44b389">
+
+  International Symposium on Memory Management (ISMM)
+  </a></i>, 2025.
+
+          <div class="pub-meta">
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/HuantWang/SecureMind" target="_blank" rel="noopener">
+  Code and dataset
+</a>
+</div>
+
+</div>
+
+
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+
+            [<b>ICSE &#39;24</b>]
+
+  <i><a href="https://conf.researchr.org/details/icse-2024/icse-2024-research-track/212/Combining-Structured-Static-Code-Information-and-Dynamic-Symbolic-Traces-for-Software">Combining Structured Static Code Information and Dynamic Symbolic Traces for Software Vulnerability Prediction</a> </i><br/>
+  <span itemprop="author">
+    <strong>Huanting Wang</strong>, Zhanyong Tang, Shin Hwei Tan, Jie Wang, Yuzhe Liu, Hejun Fang, Chunwei Xia, Zheng Wang</span><br/>
+  <i>
+
+	   <a href="https://conf.researchr.org/home/icse-2024"  target="_blank" itemprop="url" rel="noopener" style="color:#44b389">
+
+  The 46th International Conference on Software Engineering (ICSE 2024) (<del>Artifact Evaluated!</del>)
+  </a></i>, 2024.
+            <div class="pub-meta">
+
+  Premier ACM Conference in Software Engineering (CORE A*)
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://eprints.whiterose.ac.uk/id/eprint/208077/8/Combining%20Structured%20Static%20Code%20Information%20and%20Dynamic.pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/HuantWang/CONCOCTION" target="_blank" rel="noopener">
+  Code and dataset
+</a>
+
+                    <div class="row">
+     <div class="column">
+     <img src="../img/artifacts_available.jpg" width="30" height="30" alt="ACM Artifacts Available badge">
+	 </div>
+    <div class="column">
+     <img src="../img/results_reproduced.jpg" width="30" height="30" alt="ACM Results Reproduced badge">
+	</div>
+     <img src="../img/artifacts_evaluated_reusable.jpg" width="30" height="30" alt="ACM Artifacts Evaluated - Reusable badge">
+      </div>
+
+
+</div>
+
+</div>
+
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  
+            [<b>CC &#39;22</b>]
+  
+  <i><a href="https://dl.acm.org/doi/10.1145/3497776.3517769">Automating Reinforcement Learning Architecture Design for Code Optimization</a> </i><br/>
+  <span itemprop="author">
+    <strong>Huanting Wang</strong>, Zhanyong Tang, Cheng Zhang, Jiaqi Zhao, Chris Cummins, Hugh Leather, Zheng Wang</span><br/>
+  <i>
+  
+	   <a href="https://conf.researchr.org/home/CC-2022"  target="_blank" itemprop="url" rel="noopener" style="color:#44b389">
+
+  The 31st ACM SIGPLAN 2022 International Conference on Compiler Construction (CC 2022) (<del>Artifact Evaluated!</del>)
+  </a></i>, 2022.
+  <div class="pub-meta">
+
+  Premier ACM Conference in Compiler Construction (CORE A)
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://eprints.whiterose.ac.uk/184257/7/main.pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/HuantWang/SUPERSONIC" target="_blank" rel="noopener">
+  Code and dataset
+</a>
+
+      <div class="row">
+     <div class="column">
+     <img src="../img/artifacts_available.jpg" width="30" height="30" alt="ACM Artifacts Available badge">
+	 </div>
+    <div class="column">
+     <img src="../img/results_reproduced.jpg" width="30" height="30" alt="ACM Results Reproduced badge">
+	</div>
+     <img src="../img/artifacts_evaluated_reusable.jpg" width="30" height="30" alt="ACM Artifacts Evaluated - Reusable badge">
+      </div>
+</div>
+</div>
+
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+
+            [<b>TIFS &#39;21</b>]
+
+  <i><a href="https://ieeexplore.ieee.org/document/9293321">Combining Graph-Based Learning With Automated Data Collection for Code Vulnerability Detection</a> </i><br/>
+  <span itemprop="author">
+    <strong>Huanting Wang</strong>, Guixin Ye, Zhanyong Tang, Shin Hwei Tan, Songfang Huang, Dingyi Fang, Yansong Feng, Lizhong Bian, Zheng Wang</span><br/>
+  <i>
+
+	   <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206"  target="_blank" itemprop="url" rel="noopener" style="color:#44b389">
+
+  IEEE Transactions on Information Forensics and Security
+
+  </a></i>,
+  2021. Flagship Journal in Computer Security (CORE A*)
+  <div class="pub-meta">
+
+<span style="display: inline-block;">
+  <img src="../img/topcited.png" width="30" height="30" style="vertical-align: middle;" alt="Top cited award">
+</span>
+<a href="https://clarivate.libguides.com/c.php?g=593878&p=4107960" style="display: inline-block; vertical-align: middle;">
+  <strong>ESI Top 1% Highly Cited Papers</strong>
+</a>.
+
+
+  This work was featured on several online media (<a href="https://www.sohu.com/a/439954273_162758">Sohu</a>,
+    <a href="https://new.qq.com/rain/a/20201223A04M9H00">Tencent</a> and <a href="http://www.cyol.net/home/english/intro/daily.htm">China Youth Daily</a>).
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://eprints.whiterose.ac.uk/168594/16/TIFS_2021.pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/HuantWang/FUNDED_NISL" target="_blank" rel="noopener">
+  Code and dataset
+</a>
+
+
+</div>
+</div>
+
+
+  </div>
+</div>
+
+
+    </div>
+  </section>
+  
+
+  <section id="awards" class="home-section">
+    <div class="container">
+
+
+<div class="row">
+
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Awards</h1>
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <ul>
+<li><a href="https://iuk-business-connect.org.uk/opportunities/icure-discover/">ICURe Discover Programme</a> (&pound;2.5K)</li>
+<li>Chinese Award for Outstanding Students Abroad ($6K)</li>
+<li>CGO 2025 Distinguished Paper Award</li>
+<li>CGO 2025 Travel Grant</li>
+<li><a href="https://aisuperconnector.com/">AI SuperConnector Award</a> (£20K funded by AISC and $25K funded by Google Cloud) </li>
+<li><a href="https://www.mitacs.ca/our-programs/globalink-research-award-students-postdocs/">Mitacs Globalink Research Award </a>($6K) </li>
+<li>School of Computing's 3.5-Year Full Scholarship (Awarded to Only One International Student in 2021)</li>
+<li>The First-class Scholarship of Northwest University, Top 5% (2018-2019)</li>
+
+</ul>
+
+  </div>
+
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  <section id="projects" class="home-section">
+    <div class="container">
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Projects</h1>
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+
+    <div class="row isotope projects-container js-layout-row">
+
+        <div class="col-md-12 project-item isotope-item compiler" itemscope itemtype="http://schema.org/CreativeWork">
+          <i class="fa fa-files-o pub-icon" aria-hidden="true"></i>
+          <span class="project-title">
+          Software Security for SMEs in the Generative AI Era (Proof of Market)
+          </span>
+          <p class="project-summary"><a href="https://iuk-business-connect.org.uk/programme/icure/">ICURe</a>, PI, 2026</p>
+        </div>
+
+    </div>
+
+    <div class="row isotope projects-container js-layout-row">
+
+        <div class="col-md-12 project-item isotope-item compiler" itemscope itemtype="http://schema.org/CreativeWork">
+          <i class="fa fa-files-o pub-icon" aria-hidden="true"></i>
+          <span class="project-title">
+          AI4Secure: AI Empowered Automated Software Bug Detection Services
+          </span>
+          <p class="project-summary"><a href="https://aisuperconnector.com/">AI SuperConnector</a>, PI, 2024 - 2025</p>
+        </div>
+
+    </div>
+
+<!-- Older projects (hidden)
+     <div class="row isotope projects-container js-layout-row">
+
+        <div class="col-md-12 project-item isotope-item compiler" itemscope itemtype="http://schema.org/CreativeWork">
+          <i class="fa fa-files-o pub-icon" aria-hidden="true"></i>
+          <span class="project-title">
+           Automating Reinforcement Learning Architecture Design for Code Optimization
+          </span>
+          <p class="project-summary"><a href="https://ai.meta.com/research/">Meta AI Research</a> & <a href="http://www.leeds.ac.uk/">University of Leeds</a> & <a href="https://english.nwu.edu.cn/">Northwest University</a>, Collaborative Project Team Member, 2020 - 2021</p>
+        </div>
+
+    </div>
+
+    <div class="row isotope projects-container js-layout-row">
+
+        <div class="col-md-12 project-item isotope-item compiler" itemscope itemtype="http://schema.org/CreativeWork">
+          <i class="fa fa-files-o pub-icon" aria-hidden="true"></i>
+          <span class="project-title">
+          Affordable Billion-Scale Pre-trained NLP Models' Training
+          </span>
+          <p class="project-summary"><a href="https://damo.alibaba.com/">Alibaba Damo Academy</a>, Research Intern, July 2020 - December 2020</p>
+        </div>
+
+    </div>
+
+
+    <div class="row isotope projects-container js-layout-row">
+
+        <div class="col-md-12 project-item isotope-item compiler" itemscope itemtype="http://schema.org/CreativeWork">
+          <i class="fa fa-files-o pub-icon" aria-hidden="true"></i>
+          <span class="project-title">
+          Machine Learning-based Code Security Detection
+          </span>
+          <p class="project-summary"><a href="https://www.antgroup.com/en">Ant Group</a>, Collaborative Project Team Member, 2019 - 2020</p>
+        </div>
+
+
+    </div>
+-->
+
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+  <section id="teaching" class="home-section">
+    <div class="container">
+
+
+<div class="row">
+
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Services</h1>
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+
+<ul>
+
+
+<li> Program Committee Member and Reviewer for
+
+	<a href="https://2027.cgo.org/">CGO 27</a>,
+	<a href="https://kdd2026.kdd.org/">KDD 26 and 27</a>,
+	<a href="https://www.sciencedirect.com/journal/expert-systems-with-applications">ESWA</a>,
+  <a href="https://www.sciencedirect.com/journal/neurocomputing">Neurocomputing</a>,
+  <a href="https://www.computer.org/csdl/journal/td">IEEE TPDS</a>,
+  <a href="https://www.computer.org/csdl/journal/bd">IEEE TBD</a>,
+    <a href="https://www.sciencedirect.com/journal/journal-of-information-security-and-applications">JISA</a>,
+    <a href="https://www2026.thewebconf.org/">WWW 26</a>,
+    <a href="https://www.sciencedirect.com/journal/information-and-software-technology">IST</a>,
+  <a href="https://dl.acm.org/journal/tosem">TOSEM</a>,
+  <a href="https://www.sciencedirect.com/journal/science-of-computer-programming">Science of Computer Programming</a>,
+  <a href="https://anr.fr/en/call-for-proposals-details/call/generic-call-for-proposals-aapg-2025/">AAPG 2025</a>,
+  <a href="https://cacsuk.co.uk/icac/">ICAC 24 and 25</a>, <a href="https://ieee-msn.org/2024/index.php">MSN 24 and 25</a>, <a href="https://dl.acm.org/journal/csur">CSUR</a>,
+  <a href="https://www.frontiersin.org/journals/computer-science">FCS</a>,
+    <a href="https://icaihe.org/">ICAIHE 26</a>,
+  <a href="https://www.iotlife.org/">IoT-Life 26</a>.
+</li>
+
+<li> Artifact Evaluation Committee Member:
+   <a href="https://2025.cgo.org/track/cgo-2025-artifact-evaluation">CGO 25</a>,
+  <a href="https://2024.issta.org/track/issta-2024-artifact-evaluation">ISSTA 24</a>,
+  <a href="https://www.sigsac.org/ccs/CCS2024/home.html">CCS 24</a>.</li>
+
+</ul>
+
+<h2 id="teaching-assistant">Teaching Assistant</h2>
+
+<ul>
+<li>September 2022 - December 2022, <a href="https://catalogue.leeds.ac.uk/Module/UG/COMP/1211/202526">COMP1211 Computer Architecture</a>.</li>
+<li>September 2023 - December 2023, <a href="https://catalogue.leeds.ac.uk/Module/UG/COMP/1211/202526">COMP1211 Computer Architecture</a>.</li>
+</ul>
+
+<h2 id="internship">Internship</h2>
+
+<ul>
+  <li> May 2025 - Aug 2025, Research Intern, <a href="https://www.mitacs.ca/our-programs/globalink-research-internship-students/"> Concordia University</a>.
+    Supervised by  <a href="https://www.shinhwei.com/">Shin Hwei Tan</a></li>
+<li> July 2020 - December 2020, Research Intern, <a href="https://damo.alibaba.com/">ALIBABA DAMO ACADEMY</a>.
+    Supervised by  <a href="https://scholar.google.com/citations?user=3So9lV8AAAAJ&hl=en">Songfang Huang</a></li>
+<li> 2019 - 2020, Software Engineer (Part Time), <a href="https://www.antgroup.com/en">Ant Group</a>.</li>
+</ul>
+  </div>
+
+</div>
+
+    </div>
+  </section>
+  
+  <section id="bio" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Biography</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <ul>
+<li> 2024 - Aug 2026, Research Fellow, School of Computer Science, <a href="https://www.leeds.ac.uk/">University of Leeds, U.K</a>.</li>
+<li> 2021 - 2025, Ph.D., Computer Science, <a href="https://www.leeds.ac.uk/">University of Leeds, U.K</a>.</li>
+<li> 2018 - 2021, Master, Software Engineering, <a href="https://english.nwu.edu.cn/">Northwest University, China</a>.</li>
+<li> 2014 - 2018, Undergraduate, Software Engineering, <a href="https://en.chd.edu.cn/">Chang'an University, China</a>.</li>
+</ul>
+
+  </div>
+  
+</div>
+
+    </div>
+  </section>
+  
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      Huanting Wang &copy; 2026 &middot;
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+
+

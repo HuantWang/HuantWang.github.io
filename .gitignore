@@ -1,0 +1,5 @@
+*.editorconfig
+*.cfg
+.idea/*
+CV.pdf
+CV.docx
